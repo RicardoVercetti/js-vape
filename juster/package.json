@@ -2,16 +2,19 @@
   "name": "juster",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
-    "dev": "ts-node main.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node ./dist/main.js",
+    "dev": "ts-node --esm main.ts",
+    "test": "ts-node test/sample-test.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/cheerio": "^0.22.35",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/node": "^24.8.1",
@@ -20,6 +23,7 @@
   },
   "dependencies": {
     "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
     "cors": "^2.8.5",
     "express": "^5.1.0"
   }
