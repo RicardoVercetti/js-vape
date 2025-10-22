@@ -8,7 +8,8 @@
     "build": "tsc",
     "start": "node ./dist/main.js",
     "dev": "ts-node --esm main.ts",
-    "test": "ts-node test/sample-test.ts"
+    "test": "ts-node test/fetch-content-test.ts",
+    "jest": "jest"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,10 @@
     "@types/cheerio": "^0.22.35",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.8.1",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
