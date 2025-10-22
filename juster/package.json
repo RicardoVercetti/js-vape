@@ -8,7 +8,7 @@
     "build": "tsc",
     "start": "node ./dist/main.js",
     "dev": "ts-node --esm main.ts",
-    "test": "ts-node test/fetch-content-test.ts",
+    "test": "ts-node tests/fetch-content-test.ts",
     "jest": "jest"
   },
   "keywords": [],
