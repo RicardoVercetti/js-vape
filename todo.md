@@ -7,11 +7,11 @@
 
 ### 22/oct
 - [X] parse each by row
+- [X] write test code for the fetch-content
 
 ### rem
 
 #### backend
-- [ ] write test code for the fetch-content
 - [ ] save in csv file code segment
 - [ ] loop fetch all
 - [ ] await so that contents are parsed asyncronously but added together in order
