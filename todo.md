@@ -9,10 +9,12 @@
 - [X] parse each by row
 - [X] write test code for the fetch-content
 
+### 23/oct
+- [X] save in csv file code segment
+
 ### rem
 
 #### backend
-- [ ] save in csv file code segment
 - [ ] loop fetch all
 - [ ] await so that contents are parsed asyncronously but added together in order
 - [ ] time it
