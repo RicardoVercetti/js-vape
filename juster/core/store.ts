@@ -1,6 +1,6 @@
 import fs from "fs";
 
-export const saveToCsv = (content: string, filename: string): Promise<boolean> => {
+export const saveFile = (content: string, filename: string): Promise<boolean> => {
     return new Promise((resolve, reject) => {
         fs.writeFile(filename, content, (err) => {
             if (err) {

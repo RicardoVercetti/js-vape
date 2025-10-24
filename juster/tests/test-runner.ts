@@ -1,9 +1,9 @@
-import { saveToCsv } from "../core/store.js";
+import { saveFile } from "../core/store.js";
 
 const filename = "sample.txt";
 const content = "here is a sample content";
 
-const savePromise = saveToCsv(content, filename);
+const savePromise = saveFile(content, filename);
 const val = await savePromise;
 
 if(val) {
