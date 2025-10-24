@@ -1,4 +1,3 @@
-// import { describe, it } from "node:test";
 import { sum } from "./testTheTest";
 
 describe("sum function", () => {
