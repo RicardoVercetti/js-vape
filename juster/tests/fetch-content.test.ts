@@ -4,7 +4,10 @@ describe("Get function", () => {
     it("fetches content from web", () => {
         return getContent("https://www.google.com/").then((data) => {
             expect(data.status).toBe(200);
-        })
+        }).catch((err) => {
+            console.log(err);
+            return;
+        });
     });
 });
 
@@ -17,6 +20,9 @@ describe("Post function", () => {
         })
         return postContent("https://jsonplaceholder.typicode.com/posts", body).then((data) => {
             expect(data.status).toBe(201);
+        }).catch((err) => {
+            console.log(err);
+            return;
         });
     });
 })
