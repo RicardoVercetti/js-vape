@@ -2,6 +2,7 @@ import axios, { type AxiosResponse } from "axios";
 import https from "https";
 
 export async function getContent(site: string): Promise<AxiosResponse> {
+  console.log(`getting content for ${site}`);
     const response = await axios.get(site, {
         headers: { "User-Agent": "Mozilla/5.0" },
         httpsAgent: new https.Agent({
