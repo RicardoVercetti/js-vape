@@ -12,13 +12,21 @@
 ### 23/oct
 - [X] save in csv file code segment
 
+### 26/oct
+- [X] loop fetch all
+- [X] await so that contents are parsed asyncronously but added together in order
+
+
 ### rem
 
 #### backend
-- [ ] loop fetch all
-- [ ] await so that contents are parsed asyncronously but added together in order
+- [ ] sort content by date
+- [ ] save in csv
 - [ ] time it
 - [ ] benchmark the parsing performance
+- [ ] save periodical fetches if there is something new gets added
 
 #### frontend
-- [ ] downloadable as excel sheet
+- [ ] list all jobs
+- [ ] show new additions with a highlight
+- [ ] downloadable as excel sheet, csv
