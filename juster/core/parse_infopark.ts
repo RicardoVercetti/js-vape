@@ -1,5 +1,8 @@
 import * as cheerio from "cheerio";
 import { getContent } from "./fetch-content.js";
+import { formatForCsv, saveAsCsv } from "./store.js";
+
+const info_park_job_post_url = "https://infopark.in/companies/job-search";
 
 // get all <tr> from <td>
 export const coreParser = (pageContentAsString: string): string[][] => {   // returns array of array of jobs
@@ -66,4 +69,14 @@ export function findLastPage(pageContentAsString: string): number {
     });
 
     return Math.max(...newLineup);
+}
+
+// procedure is to fetch all jobs and save them in a csv with the time stamp
+export async function runProcedure() {
+    const allPosts = await loopFetch(info_park_job_post_url);
+
+    console.log("fetched all posts, saving to file...");
+    await saveAsCsv("infopark_job_list", formatForCsv(allPosts));
+
+    console.log("completed saving...");
 }
