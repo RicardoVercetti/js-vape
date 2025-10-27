@@ -30,6 +30,9 @@
 - [ ] schedule job looking maintainer
 - [ ] create & save hash for each job post
 - [ ] fetch from technopark
+- [ ] scrape request should scrape and check if already present in the static content
+- [ ] UI update based on when backend has something to update
+- [ ] check hash and list new jobs with highlight
 
 #### frontend
 - [ ] list all jobs
