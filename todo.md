@@ -16,15 +16,20 @@
 - [X] loop fetch all
 - [X] await so that contents are parsed asyncronously but added together in order
 
+### 27/oct
+- [X] save in csv with time stamp
+- [X] one procedure for fetch and save as csv
 
 ### rem
 
 #### backend
 - [ ] sort content by date
-- [ ] save in csv
 - [ ] time it
 - [ ] benchmark the parsing performance
 - [ ] save periodical fetches if there is something new gets added
+- [ ] schedule job looking maintainer
+- [ ] create & save hash for each job post
+- [ ] fetch from technopark
 
 #### frontend
 - [ ] list all jobs
